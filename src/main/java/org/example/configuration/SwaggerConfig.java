@@ -10,12 +10,22 @@ import io.swagger.v3.oas.models.servers.Server;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * kelas untuk representasi konfigurasi swagger ui
+ * @author Dwi Satria Patra
+ */
 @Configuration
 public class SwaggerConfig {
+
+    /**
+     * Method untuk mengatur konfigurasi swagger dengan OpenAPI versi 3
+     * @param appDescription Deskripsi dari dokumentasi swagger
+     * @param appVersion Keterangan versi dari dokumentasi dengan swagger
+     * @return OpenAPI yang mengatur detail dari dokumentasi swagger
+     */
     @Bean
     public OpenAPI demoApi(@Value("REST API for challenge chapter 6 back end java binar academy") String appDescription,
                            @Value("v1.0.0") String appVersion

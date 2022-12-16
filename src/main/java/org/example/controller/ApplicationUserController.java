@@ -21,6 +21,10 @@ import org.springframework.web.bind.annotation.*;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Kelas controller untuk menghandle endpoint terkait user
+ * @author Dwi Satria Patra
+ */
 @Tag(name = "USER")
 @RestController
 @RequestMapping("/users")
