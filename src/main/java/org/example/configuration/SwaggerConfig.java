@@ -27,7 +27,7 @@ public class SwaggerConfig {
      * @return OpenAPI yang mengatur detail dari dokumentasi swagger
      */
     @Bean
-    public OpenAPI demoApi(@Value("REST API for challenge chapter 6 back end java binar academy") String appDescription,
+    public OpenAPI demoApi(@Value("REST API user microservice for challenge chapter 7 backend java Binar Academy") String appDescription,
                            @Value("v1.0.0") String appVersion
     ) {
         final String securitySchemeName = "bearerAuth";
@@ -38,7 +38,7 @@ public class SwaggerConfig {
 
         return new OpenAPI()
                 .info(new Info()
-                        .title("Patra API")
+                        .title("User Microservice Endpoints")
                         .version(appVersion)
                         .description(appDescription)
                         .termsOfService("http://swagger.io/terms")
